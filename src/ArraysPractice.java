@@ -18,17 +18,26 @@ public class ArraysPractice {
             arr[minIndex] = arr[i];
             arr[i] = temp;
         }
-        for (int i : arr) {
-            System.out.print(i + " ");
-        }
-        System.out.println();
+        printArray(arr);
+    }
+
+    static void quickSort(int[] arr){
+
     }
 
 
+    static void printArray(int[] arr){
+        for(int i : arr)
+            System.out.print(i + " ");
+    }
 
     public static void main(String[] args) {
         System.out.println("This is an array testing class");
         int[] testArray = new int[]{5, 6, 23, 6534, 1, 5, 7, 2, 6, 342};
+        System.out.println("original array is: ");
+        printArray(testArray);
+        System.out.println();
+
         //Selection Sort Test
         System.out.println("sorting test array with selection sort: ");
         selectionSort(testArray);
